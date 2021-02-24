@@ -1,11 +1,11 @@
 import React from "react";
 
 function Tickler() {
-  function tickle(event) {
-    console.log(event);
+  function tickle(num) {
+    console.log(`button ${num} was pressed`);
   }
 
-  return <button onClick={tickle}>Tickle me!</button>;
+  return <button onClick={() => tickle(3)}>Tickle me!</button>;
 }
 
 export default Tickler;
